@@ -1,0 +1,80 @@
+<!-- in this code we will learn about  display in line and display block -->
+<!-- dispaly in line ka matlab k wo element sirf utni jaghah le ga jitni jagah usko cahie hogi -->
+<!-- display block ka matlb he k wo element pora ak block le lega  -->
+<!-- 1)we can set width to block element and not to inline element. but we can make them block by { display: block} property. So that we don't have to use margin and padding extensively. -->
+<!-- 2)But what if we want that element to position itself (OR occupy space) like inline element and also get adjusted by width? for this we use {display:inline-block} property. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayesha</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+
+        }
+        
+        img{
+            /* img ak inline element he agar men is ki margine auto karonga to koi farq nahi  pare ga magar men display property use kar  k is ko block bana sakta hon  */
+            display: block;
+            margin: auto;
+            width: 20%;
+        }
+        h2{
+            margin: 0px;
+            font-family: cursive;
+            text-align: center;
+        }
+        header{
+            border: 5px solid red;
+            /* width: 1200px; */
+        }
+        .Ayesha{
+            display: inline-block;
+            /* dispaly in line block ka matlab he k hum is ki width waghra bhi change kar lenge or is ko iline bhi rakhenge  */
+            border: 3px solid blue;
+            border-top-right-radius: 20px;
+            background-color: rgb(160, 149, 149);
+            margin: 5px 0px;
+            padding: 10px 12px;
+            width: 33%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .container{
+            margin: auto;
+            width: 1200px;}
+    </style>
+</head>
+<body>
+    <header class="headr">
+        <img src="nom.png" alt="">
+        <h2>Welcome to fake world</h2>
+        
+
+
+    </header>
+    <div class="container">
+        
+        <div class="Ayesha">
+            
+            <h2> Ayesha is a good girl</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum tempora non quasi harum, expedita quisquam odit eaque illo ea accusamus ipsam exercitationem aut, voluptates doloremque asperiores, ipsa numquam deserunt possimus?</p>
+        </div>
+    <div class="Ayesha">
+        
+        <h2> Ayesha is a good girl</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum tempora non quasi harum, expedita quisquam odit eaque illo ea accusamus ipsam exercitationem aut, voluptates doloremque asperiores, ipsa numquam deserunt possimus?</p>
+    </div>
+    <div class="Ayesha">
+        
+        <h2> Ayesha is a good girl</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum tempora non quasi harum, expedita quisquam odit eaque illo ea accusamus ipsam exercitationem aut, voluptates doloremque asperiores, ipsa numquam deserunt possimus?</p>
+    </div>
+</div>
+</body>
+</html>

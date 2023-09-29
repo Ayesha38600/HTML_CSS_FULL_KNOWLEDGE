@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont{
+            
+            float: right;
+            width: 610px;
+           
+            /* display: flex; = float: left; =    flex-direction: coloumn;  */
+         
+            display: flex; 
+             
+            /* flex-direction: column-reverse;   is sy 6 5 4 3 2 1 order of boxes hojana */
+            
+            flex-wrap: wrap;
+          
+        }
+        .ayshg{
+            width: 300px;
+            height: 300px;
+            /* border: 2px blue solid; */
+            background-color: rgb(198, 138, 255);
+
+        }
+        #a{
+            background-color: blueviolet;
+        }
+        #b{
+            background-color: rgb(43, 226, 58);
+        }
+        #c{
+            background-color: rgb(226, 208, 43);
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="ayshg" id="a">home</div>
+        <div class="ayshg" id="b"> gallery</div>
+        <div class="ayshg" id="c">about</div>
+        <div class="ayshg" id="d">photo</div>
+      
+    </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+p{
+    color: rgba(11, 238, 22, 0.932);
+    border: 3px solid red;
+    border-radius: 14px;
+}
+h3{
+    color: rgba(2, 157, 247, 0.932);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 14px;
+}

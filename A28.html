@@ -1,0 +1,61 @@
+<!-- in this code we will learn about responsive design  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayesha</title>
+    <style>
+        .box{
+            background-color: aqua;
+            text-align: center;
+            font-size: 39px;
+            display: none;
+
+        }
+        /*  ab yahan se hum responsive ka code likhenge
+         @media use hota he or phr hum max se min width dete  */
+
+
+        @media only screen and (max-width:445px){
+            #box_1{
+                display: block;
+                color: blueviolet;
+                background-color: rgb(78, 232, 214);
+            }
+        }
+        @media only screen and (min-width:445px) and  (max-width:800px){
+            #box_2{
+                display: block;
+                color: blueviolet;
+                background-color: rgb(184, 210, 111);
+            }
+        }
+        @media only screen and (min-width:800px) and  (max-width:1024px){
+            #box_3{
+                display: block;
+                color: blueviolet;
+                background-color: rgb(70, 158, 235);
+            }
+        }
+        @media only screen and (min-width:1024px) and  (max-width:3000px){
+            #box_3{
+                display: block;
+                color: blueviolet;
+                background-color: rgb(70, 158, 235);
+            }
+        }
+        
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box_1">I am a Iphone 13-promax</div>
+    <div class="box" id="box_2">I am a tablet</div>
+    <div class="box" id="box_3">I am a desktop computer </div>
+    <div class="box" id="box_4">I am a wide screen computer </div>
+</body>
+</html>

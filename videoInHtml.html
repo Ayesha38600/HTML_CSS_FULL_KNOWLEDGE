@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Background Video</title>
+</head>
+<style>
+    /* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; /* Text color */
+    font-size: 24px;
+}
+
+</style>
+<body>
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="https://player.vimeo.com/external/288299338.sd.mp4?s=ce4e1834ba4818528be42b6271d21e0c64376de8&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content-overlay">
+            <!-- Your content goes here -->
+            <h1>Aysh</h1>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!-- in this code we will learn about float and clear concept  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayesha</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /* margin: 0%;
+            padding: 0%; */
+        }
+
+        body {
+            font-family: 'Dancing Script', cursive;
+            font-size: 18px;
+            font-weight: bold;
+            
+            background-image: url("Ayesha.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(45, 255, 4);
+        }
+
+        .container {
+            width: 1000px;
+            height: 1000px;
+            border: 10px solid red;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            /* jab mene x axis ki side men margin auto ki to wo x axis men centr men agya  */
+
+            margin: 30px auto;
+        }
+
+        .item {
+            border: 6px solid blue;
+            border-bottom-left-radius: 23px;
+            /* border-top-left-radius: 22px; */
+            border-bottom-right-radius: 22px;
+            margin: 10px 10px;
+            padding: 8px 5px;
+
+        }
+
+        #d1 {
+            float: left;
+            width: 48%;
+        }
+
+        #d2 {
+            float: right;
+            /* margin: 0% */
+            width: 48%;
+        }
+
+        #d3 {
+            /* clear: both; */
+            float: left;
+            width: 48%;
+        }
+
+        #d4 {
+            /* clear: both; */
+            float: right;
+        }
+
+        p,
+        h3 {
+            text-align: justify;
+        }
+
+        h1 {
+            margin: 10px auto;
+            width: 800px;
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to Al-Ayesha International Islamic Institute</h1>
+        <div class="item" id="d1">
+            <h3 class="qu">Quranic Department</h3>
+            <p class="pera">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae esse repudiandae minus
+                corrupti beatae vel aliquam consectetur doloremque, atque ratione, a quo molestiae error quidem nesciunt
+                tempore cupiditate magnam. Ad.
+
+            </p>
+        </div>
+        <div class="item" id="d2">
+            <h3 class="hd">Ahadeese Nabi Department</h3>
+
+            <p class="pera"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae esse repudiandae minus
+                corrupti beatae vel aliquam consectetur doloremque, atque ratione, a quo molestiae error quidem nesciunt
+                tempore cupiditate magnam. Ad.
+
+            </p>
+        </div>
+        <div class="item" id="d3">
+            <h3 class="du">Dua's Department</h3>
+            <p class="pera"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae esse repudiandae minus
+                corrupti beatae vel aliquam consectetur doloremque, atque ratione, a quo molestiae error quidem nesciunt
+                tempore cupiditate magnam. Ad.
+
+            </p>
+        </div>
+        <div class="item" id="d4">
+            <h3 class="ot">Other Facuality</h3>
+            <p class="pera">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae esse repudiandae minus
+                corrupti beatae vel aliquam consectetur doloremque, atque ratione, a quo molestiae error quidem nesciunt
+                tempore cupiditate magnam. Ad.
+
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

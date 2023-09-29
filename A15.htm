@@ -1,0 +1,108 @@
+<!-- in this code we learn about selectors in css -->
+<!-- four types of slectors in css  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayesha</title>
+    <style>
+        /* element slector */
+        h2 {
+            color: rgb(4, 62, 253);
+            background-color: rgb(193, 112, 196);
+            border: 3px solid rgb(158, 238, 10);
+            border-radius: 10px;
+        }
+
+        p {
+            color: aquamarine;
+            background-color: brown;
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+
+        /* id selector */
+        /* #use kar ke hum id ki css use karenge */
+        #div1 {
+            border: 5px solid blue;
+            border-radius: 10px;
+        }
+
+        #heading1 {
+            background-color: dimgrey;
+            color: cyan;
+            border: 3px solid rgb(19, 240, 166);
+        }
+
+        #firstpera {
+            color: blue;
+            background-color: aqua;
+            border: 3px solid rgb(240, 162, 162);
+
+        }
+
+        /* class selector */
+        /* . use kar ke hum classs ki css use karenge  */
+        .div2 {
+            border: 5px solid rgb(145, 145, 255);
+            border-radius: 10px;
+        }
+
+        .heading2 {
+            background-color: rgb(177, 253, 36);
+            color: rgb(99, 113, 240);
+            border: 3px solid rgb(212, 85, 96);
+        }
+
+        .secondpera {
+            color: rgb(231, 255, 19);
+            background-color: rgb(85, 13, 255);
+            border: 3px solid rgb(19, 18, 19);
+
+        }
+         /* grouping slector */
+        h3,span{
+            color: rgb(8, 240, 66);
+            background-color: rgb(253, 151, 240);
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- in this div we are going to use element slectors  -->
+    <div>
+        <h2> elemet slectors in css </h2>
+        <p> Badranga and Shysta friends forever</p>
+    </div>
+
+    <!-- in this div we are going to use id slector -->
+    <!-- id slector k lie hum partyicular id de dete hen or id har element ki fix hoti he wo kisi dosre ki nahi ho sakti -->
+    <div id="div1">
+        <h2 id="heading1"> id selector in css </h2>
+        <p id="firstpera">Technology ka zamana he</p>
+
+
+    </div>
+    <!-- in this div we are going to use class slector -->
+    <!-- class slector hum ak se ziada element ko de sakte hen magar id nhai de sakte hen class hum bhrt sare elemet ko de kar css apply kar sakte hen -->
+    <div class="div2">
+        <h2 class="heading2"> class selector in css </h2>
+        <p class="secondpera"> 75 wala pass he hahahhahahah (memories)</p>
+
+    </div>
+
+    <!-- in this div we are going to use grouping seletors  -->
+    <!-- grouping slector men hum ak se ziada element par ak sath css use kar sakte hen   -->
+    <div>
+        <h3>Nom</h3>
+        <span>my fvt nick name</span>
+    </div>
+</body>
+
+</html>

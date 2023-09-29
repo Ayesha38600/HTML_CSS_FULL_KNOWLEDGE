@@ -1,0 +1,39 @@
+<!-- before and after concept k through line bnyngy  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+    position: relative;
+        }
+        h1::before{
+            content: "";
+       display: block;
+       width: 120px;
+       height: 2px;
+       position: absolute;
+       background: black;
+       left: 28%;
+       top: 14px;
+        }
+        h1::after{
+            content: "";
+       display: block;
+       width: 120px;
+       height: 2px;
+       position: absolute;
+       background: black;
+       right: 28%;
+       top: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>I am a Web Designer!</h1>
+</body>
+</html>

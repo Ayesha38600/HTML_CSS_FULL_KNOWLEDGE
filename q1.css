@@ -1,0 +1,13 @@
+.Nom{
+    border: 4px solid rgb(246, 6, 118);
+    border-radius: 4px;
+    background-color: aqua;
+    color: brown;
+
+}
+.i_sha{
+    border: 4px solid rgb(70, 8, 255);
+    border-radius: 4px;
+  
+    color: rgb(234, 4, 255);
+}

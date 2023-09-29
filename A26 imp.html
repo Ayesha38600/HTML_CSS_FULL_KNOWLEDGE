@@ -1,0 +1,92 @@
+<!-- in this code we will learn about flex box concept -->
+<!-- flex box is a part of css only -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayesha</title>
+    <style>
+        .container{
+            width: 100%;
+            border: 3px solid black;
+            height: 700px;
+            /* ab jab mene is container ki display flex kar di to is container k sare box line men ajyenge  */
+            /* initilaize the container as a flex box  */
+           
+
+            display: flex;
+            /* flex properties  */
+            /* flex-direction: row ; */
+            /* by default flex direction row hi hoti he  */
+            /* flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row-reverse; */
+
+            /* if we want respons from our website we use flex wrap property  */
+            flex-wrap: wrap; 
+            /* by default no wrap hota he  */
+
+            /* flex-flow: row-reverse; */
+            /* justify properties */
+
+            justify-content: center; 
+            /* is se sare items centr men agye hen  */
+            /* justify-content: space-evenly; */
+            /* start se end tak barabar barabar space creat kar de ga  */
+            /* justify-content: space-between; */
+            /* is se start end men space nahi aye ga baqi between the boxes creat hojye gi  */
+
+
+            /* align-items properties ; */
+
+            align-items: center;
+            /* centr centr hojynge  */
+            align-items: flex-start;
+            /* sab uper chale jynge  */
+            align-items: flex-end;
+            /* sab neeche ajyenge  */
+            align-items: stretch;
+            /* is se ye sare boxes ko strech kare ga  */
+
+        }
+        .box{
+            height: 100px;
+            width: 200px;
+            background-color: cadetblue;
+            border: 3px solid papayawhip;
+            padding: 5px;
+            margin: 8px;
+            
+
+        }
+
+        /* now we are using flex properties in boxes */
+    .box-1{
+        order: 9;
+
+    }
+    /* .box-2{
+        
+    }
+    .box-3{
+        
+    } */
+    </style>
+</head>
+<body>
+  
+
+    <div class="container">
+
+        <!-- ye div hen or ye sab display block  -->
+        <div class="box" id="box-1">First box</div>
+        <div class="box" id="box-2">Second box</div>
+        <div class="box" id="box-3">Third box</div>
+        <div class="box" id="box-4">Fourth box</div>
+        <div class="box" id="box-5">Fifth Box</div>
+        <div class="box" id="box-6">Sixth Box</div>
+    </div>
+</body>
+</html>

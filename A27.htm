@@ -1,0 +1,62 @@
+<!-- in this code we will learn about em rem vh vw units in css -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayesha </title>
+    <style>
+        html{
+            font-size: 20px;
+
+        }
+        .container{
+
+            border: 4px solid green;
+            height: 100vh;
+            width: 100vw;
+            font-size: 20px;
+        }
+        .box{
+            text-align: center;
+        }
+        #box_1{
+             /* em- 
+Font-sizes are inherited relative to the parent element.
+
+10em means ten times of the parent element.
+
+Use the CSS given below : */
+            font-size: 2em;
+            /* em ese unit he k jo apne parent se multiply hoti he jese is ka parent 20 tha to 20 *2 hua to computed value 40 ai he  */
+
+            padding: 2em;
+            /* padding font size se multiply hogi jese yahan computed value 40 thi to 40 multiply by 2 hua  */
+
+        }
+        #box_2{
+             /* rem-
+Font-size gets set according to the font-size of the root element.
+
+In general, <html> is the root element.
+
+In rem, "r" stands for "root." */
+
+            font-size: 4rem;
+            /* rem hamare pas html k base adddres k mutabiq chalata he html base se multiply hota he   */
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box" id="box_1">This is first box</div>
+        <div class="box" id="box_2">This is second box</div>
+        <div class="box" id="box_3">This is Third  box</div>
+        <div class="box" id="box_4">This is fourth box</div>
+    </div>
+</body>
+</html>

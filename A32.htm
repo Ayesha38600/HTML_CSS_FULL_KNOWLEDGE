@@ -1,0 +1,106 @@
+<!--  in this copde we will learn about Animation in css -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayesha </title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            /* width: 100%;
+            height: 300px; */
+        }
+        .box{
+            background-color: rgb(121, 207, 241);
+            width:300px;
+            height: 300px;
+            position: relative;
+            
+            /* ab yahan se mene animation ki css start karni he  */
+            /* sab se pehle stup wo name dena hota he  */
+            animation-name: Ayesha;
+    /* animation-name: Aysh; */
+    /* pjr us k bad animation ki duration deni hoti he  */
+    /* animation-duration: 1s;
+    animation-duration: 3s; */
+    animation-duration: 0.7s;
+    /* phr us k bad animation-iteration-count dena hota he is se repetition ka pata chalta he  */
+    /* animation-iteration-count: 5 ;
+    animation-iteration-count: 3 ; */
+    /* animation-iteration-count: infinite ; */
+    animation-iteration-count: 1 ;
+    
+    /* animation-iteration-count hum jitna no denge utna hi iterate hoga agar infinite denge to infinate hoga  */
+    /* animation-fill-mode:forwards ; */
+    /* animation fill mode forwed karne se wo forwed ja kar ruk jata he  */
+    /* animation-timing-function: ease-in; */
+    /*  start men slow hota he phr tez hojata he */
+    /* animation-timing-function: ease-out; */
+    /*  start men slow hota he phr tez hojata he */
+    /* animation-timing-function: ease-in-out; */
+    /* dono ka mixup he  */
+    
+    /* animation-delay: 3s; */
+    /* is ka matlab animation ab 3s bad start hogi */
+    /* animation-direction: reverse;
+    animation-direction:alternate-reverse;
+    animation-direction:alternate; */
+    /* ye sab directiion batati hen  */
+    /* ab yahan se men animation name change kar rha hon q k mene kuch or namimation bhi dekhni hen  */
+
+    /* ab hum ak shortcut ko use kar k bhi sab propertieis ko ak sath define kar sakte hen  */
+    /* These properties can be set using this shorthand */
+        /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+        /* animation: harry 5s ease-in 1s 12 backwards; */
+}
+/* @keyframes Ayesha{
+    from{
+        width: 200px;
+    }
+    to{
+        width:600px;
+    }
+} */
+
+@keyframes Ayesha{
+    0%{
+        top: 0px;       
+        left:0px; 
+
+    }
+    25%{
+            top: 200px;
+            left:0px 
+
+    }
+    50%{
+            top: 400px;
+            left: 50px
+
+    }
+    75%{
+            top:600px ;
+            left:100px 
+
+    }
+    100%{
+            top: 400px;
+            left:150px
+
+
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+            you dont know how realy you mean to me
+            #nom 
+        </div>
+    </div>
+</body>
+</html>

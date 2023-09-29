@@ -1,0 +1,44 @@
+<!-- in this code we will learn about grid gap in coulum and rows  -->
+<!-- last code men hum ne sirf grid ka introduction dekha tha is men hum proper css grid ko use karenge -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ayesha</title>
+    <style>
+    .grid{
+        display: grid;
+        /* start k 3 rows ko ye property laga do  */
+        grid-template-rows: 1fr 1fr 4fr;
+        /* us k bad jitne bhi rows he  un par ye laga do  */
+        grid-auto-rows: 2fr;
+        /* ye property hum pehle bhi use kar chuke ye repeat kare gi  */
+        
+        grid-template-columns: repeat(4, 2fr);
+        grid-gap: 1rem;
+    
+    }
+    .box{
+        background-color: red;
+        border: 2px solid black;
+    }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+        <div class="box">This is box-5</div>
+        <div class="box">This is box-6</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!-- css pseudo elements are -->
+<!-- ::first-letter -->
+<!-- ::first-line -->
+<!-- ::selection  -->
+<!-- ::placeholder  -->
+<!-- ::before  -->
+<!-- ::after -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* <!-- ::first-letter --> */
+         /* //paragrah ka ya kisi v chiz ka first letter py ye property apply hogy */
+         /* p::first-letter , li::first-letter{
+            color: Red;
+            font-size: 26px;
+
+         } */
+
+
+
+
+         /* <!-- ::first-line --> */
+               /* //paragrah ka ya kisi v chiz ka first line py ye property apply hogy */
+         /* p::first-line , li::first-line{
+            color: Red;
+            font-size: 26px;
+
+         } */
+
+
+
+
+
+
+         /* <!-- ::selection  --> */
+         /* jab hum kisi v cheez ko select krn and uska background-color chng krna ho whn use krngy  */
+         /* simple highlight krta h ye  */
+         /* p::selection{
+            background-color: red;
+            color: whte;
+         } */
+
+
+
+
+
+
+
+
+         /* <!-- ::placeholder  -->  */
+         /* ye simple kisi v placholder ki styling krta  */
+         /* input::placeholder{
+            color: red;
+            background-color: pink;
+         } */
+
+
+
+
+
+         /* <!-- ::before  --> and after  */
+         /* paragraph  ka first child hota h ""before"" yani paragraph mai jo v content ara h us sy phly before exist krta h  */
+         /* paragraph  ka sara content khtm hony k bad ""after""" exist krta h   */
+         /* content zaroor use krna hota h */
+         p::before{
+            content: "Hello Dosto ";
+            
+            background: red;
+            color: rgb(72, 50, 50);
+            display: block;
+         }
+
+
+         p::after{
+            content: "Hello" ;
+            
+            background: rgb(0, 221, 255);
+            color: rgb(72, 50, 50);
+
+            display: block;
+         }
+
+    </style>
+</head>
+<body>
+   
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nihil? Velit numquam cupiditate sit, sequi cumque vitae laboriosam in esse.</p>
+    <ul>
+        <li>Aysh</li>
+        <li>Ghaziyan</li>
+        <li>Shifa</li>
+        <li>Ume Rubab</li>
+        
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nihil? Velit numquam cupiditate sit, sequi cumque vitae laboriosam in esse.</p>
+    <input type="text" placeholder="Enter Name">
+</body>
+</html>

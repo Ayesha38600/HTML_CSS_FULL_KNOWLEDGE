@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        /* //srf ek bar variable define krny sy har jaga kam hojy ga */
+:root{
+    /* --maincolor : rgb(20, 113, 152) ; */
+}
+h1{
+    /* agr humny :root mai koi variable define na kia hota and directly h1 mai  background: var(--maincolor) ye dety to sath mai default color dena parta kuch istraha */
+
+    background: var(--maincolor , red);
+
+    /* background: var(--maincolor); */
+}
+p{
+    color: var(--maincolor);
+}
+    </style>
+</head>
+<body>
+    <h1>Ayesh is Cute Girl</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, unde.</p>
+    <div class="container">
+        <h2>Shifa is Cute Girl</h2>
+    </div>
+    <div class="mainText">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus voluptate dolorum non. Inventore fugiat at eveniet explicabo! Dolore neque facilis reprehenderit. Recusandae, nobis. Ratione cum perferendis voluptatem quia odit sunt!</p>
+    </div>
+</body>
+</html>

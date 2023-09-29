@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"> -->
+<script src="https://kit.fontawesome.com/ecf0b471b4.js" crossorigin="anonymous"></script>
+
+<!-- <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet"> -->
+    <title>Hamza Laser Lab</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url("hamza3.jpg");
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Dancing Script', cursive;
+            
+        }
+        .navbar{
+            background: rgb(78, 16, 94);
+            text-align: center;
+            border: 2px solid rgb(240, 236, 236);
+            border-bottom-left-radius: 22px;
+            border-top-right-radius: 22px;
+            
+            
+        }
+        .navbar ul{
+            list-style: none;
+            display: inline-flex;
+            color: white;
+            
+        }
+        .navbar ul li{
+            width: 130px;
+            height: 40px;
+            margin: 2px 18px;
+            padding: 8px 3px;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        .active,.navbar ul li :hover{
+            /* background-color: greenyellow */
+            background: rgb(20, 20, 20);
+            /* color: rgb(255, 250, 252); */
+            border: 2px solid white;
+            border-bottom-left-radius: 12px;
+            border-top-right-radius: 10px;
+        }
+        .navbar ul li .fa{
+            margin-right: 10px;
+            /* is se hum ne icons or li k itoms k darmyan space create ki he */
+
+        }
+        .navbar ul ul {
+            display: none;
+        }
+        .navbar ul li:hover > ul{
+            display: block;
+            background: rgb(87, 43, 99);
+            position: absolute;
+            margin-top: 10px;
+            margin-left: -10px;
+        }
+        /* .sub_menu1{
+             display: none; 
+        }
+        .sub_menu1 ul li:hover .sub_menu1{
+            display: block;
+            background: rgb(87, 43, 99);
+            position: absolute;
+            margin-top: 10px;
+            margin-left: -10px;
+
+        }
+        .sub_menu1 ul li:hover .sub_menu1 ul{
+            display: block;
+            margin: 10px;
+
+
+        }
+        .sub_menu1 ul li:hover .sub_menu1 ul li{
+            width: 100px;
+        } */
+        .navbar ul li :hover . ul li{
+            border-bottom: 4px dotted white;
+            background: transparent;
+            text-align: left;
+            
+        }
+        .navbar ul li :hover ul li a{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li class="active"> <a href="#"><i class="fa fa-home" ></i>Home</a></li>
+            <li> <a href="#"> <i class="fab fa-accusoft" ></i>About Us </a> 
+            <ul >
+            
+                <li><a href="#">Shop detail </a></li>
+                <li><a href="#">Shoping cart</a></li>
+                <li><a href="#">Check out</a></li>
+                <li><a href="#">Blog Detail</a></li>
+            </ul>
+        </li>
+            <li> <a href="#"> <i class="fa fa-product-hunt" aria-hidden="true"></i>Products </a></li>
+            <li> <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Location </a></li>
+            <li> <a href="#"><i class="fa-solid fa-address-book"></i> Contact </a></li>
+            <li> <a href="#"> <i class="fa fa-life-buoy" ></i>Services </a></li>
+            <li> <a href="#"><i class="	fab fa-bitcoin" ></i> Pricing </a></li>
+        </ul>
+    </div>
+</body>
+</html>

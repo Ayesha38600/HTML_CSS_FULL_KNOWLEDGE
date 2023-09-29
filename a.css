@@ -1,0 +1,9 @@
+h1{
+    color: crimson;
+    background-color: pink;
+    border: solid 3px blueviolet;
+    border-radius:10px;
+}
+p{
+    color: rgb(80, 255, 232);
+}
